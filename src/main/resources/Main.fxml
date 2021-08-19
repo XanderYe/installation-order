@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.xanderye.controller.MainController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="40.0" prefHeight="30.0" prefWidth="60.0" text="CPU：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="90.0" prefHeight="30.0" prefWidth="60.0" text="主板：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="140.0" prefHeight="30.0" prefWidth="60.0" text="内存：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="190.0" prefHeight="30.0" prefWidth="60.0" text="显卡：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="240.0" prefHeight="30.0" prefWidth="60.0" text="散热器：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="290.0" prefHeight="30.0" prefWidth="60.0" text="固态：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="340.0" prefHeight="30.0" prefWidth="60.0" text="机械：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="390.0" prefHeight="30.0" prefWidth="60.0" text="电源：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="440.0" prefHeight="30.0" prefWidth="60.0" text="机箱：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="490.0" prefHeight="30.0" prefWidth="60.0" text="风扇：" />
+      <ComboBox fx:id="cpuComboBox" editable="true" layoutX="162.0" layoutY="40.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="mainBoardComboBox" editable="true" layoutX="162.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="ramComboBox" editable="true" layoutX="162.0" layoutY="140.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="gpuComboBox" editable="true" layoutX="162.0" layoutY="190.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="cpuFanComboBox" editable="true" layoutX="162.0" layoutY="240.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="ssdComboBox" editable="true" layoutX="162.0" layoutY="290.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="hddComboBox" editable="true" layoutX="162.0" layoutY="340.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="powerComboBox" editable="true" layoutX="162.0" layoutY="390.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="caseComboBox" editable="true" layoutX="162.0" layoutY="440.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="fanComboBox" editable="true" layoutX="162.0" layoutY="490.0" prefHeight="30.0" prefWidth="150.0" />
+      <TextField fx:id="cpuPriceText" layoutX="344.0" layoutY="40.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="mainBoardPriceText" layoutX="344.0" layoutY="90.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="ramPriceText" layoutX="344.0" layoutY="140.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="gpuPriceText" layoutX="344.0" layoutY="190.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="cpuFanPriceText" layoutX="344.0" layoutY="240.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="ssdPriceText" layoutX="344.0" layoutY="290.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="hddPriceText" layoutX="344.0" layoutY="340.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="powerPriceText" layoutX="344.0" layoutY="390.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="casePriceText" layoutX="344.0" layoutY="440.0" prefHeight="30.0" text="0" />
+      <TextField fx:id="fanPriceText" layoutX="344.0" layoutY="490.0" prefHeight="30.0" text="0" />
+   </children>
+</AnchorPane>
