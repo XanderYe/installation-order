@@ -24,7 +24,7 @@ public class PartExcelUtil {
 
     public static Map<Integer, List<Part>> readExcel(String path) {
         Map<Integer, List<Part>> partTypeMap = new HashMap<>();
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < PartTypeEnum.values().length; i++) {
             int type = i + 1;
             ExcelReader reader = ExcelUtil.getReader(path, i);
             List<Map<String, Object>> readAll = reader.read(0, 1, Integer.MAX_VALUE);
@@ -54,7 +54,7 @@ public class PartExcelUtil {
             headers.add("总价");
             headers.add("链接");
             rows.add(headers);
-            for (int i = 1; i <= 9; i++) {
+            for (int i = 1; i <= PartTypeEnum.values().length; i++) {
                 List<Object> data = new ArrayList<>();
                 String typeName = PartTypeEnum.getNameByValue(i);
                 data.add(typeName);

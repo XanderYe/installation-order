@@ -17,8 +17,8 @@ public enum PartTypeEnum {
     SSD("固态", 6),
     HDD("机械", 7),
     POWER("电源", 8),
-    CASE("机箱", 8),
-    FAN("风扇", 9);
+    CASE("机箱", 9),
+    FAN("风扇", 10);
 
     private String name;
 

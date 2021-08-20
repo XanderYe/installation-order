@@ -74,7 +74,29 @@ public class MainController implements Initializable {
         directoryChooser.setTitle("请选择保存位置");
         directoryChooser.setInitialDirectory(new File(config.getUserDir()));
         File dir = directoryChooser.showDialog(new Stage());
-        boolean exportRes = PartExcelUtil.exportExcel(partMap, allPriceLabel.getText(), dir.getAbsolutePath());
+        Map<Integer, Part> exportPartMap = new HashMap<>();
+        for (int i = 1; i <= PartTypeEnum.values().length; i++) {
+            Part part = partMap.get(i);
+            if (part == null) {
+                String partName = partNames[i - 1];
+                ComboBox comboBox = (ComboBox) getObjectByName(partName + "ComboBox");
+                if (comboBox.getValue() != null) {
+                    part = new Part();
+                    TextField priceText = (TextField) getObjectByName(partName + "PriceText");
+                    TextField numText = (TextField) getObjectByName(partName + "NumText");
+                    TextField totalPriceText = (TextField) getObjectByName(partName + "TotalPriceText");
+                    part.setType(i);
+                    part.setName((String) comboBox.getValue());
+                    part.setPrice(BigDecimal.valueOf(Double.parseDouble(priceText.getText())));
+                    part.setNum(Integer.valueOf(numText.getText()));
+                    part.setTotalPrice(BigDecimal.valueOf(Double.parseDouble(totalPriceText.getText())));
+                }
+            }
+            if (part != null) {
+                exportPartMap.put(part.getType(), part);
+            }
+        }
+        boolean exportRes = PartExcelUtil.exportExcel(exportPartMap, allPriceLabel.getText(), dir.getAbsolutePath());
         if (exportRes) {
             JavaFxUtil.alertDialog("提示", "导出成功");
         } else {
@@ -148,8 +170,10 @@ public class MainController implements Initializable {
         String typeEnumName = StringUtil.camelToUnderline(partName).toUpperCase();
         PartTypeEnum partTypeEnum = PartTypeEnum.valueOf(typeEnumName);
         Part part = partMap.get(partTypeEnum.getValue());
-        part.setNum(num);
-        part.setTotalPrice(totalPrice);
+        if (part != null) {
+            part.setNum(num);
+            part.setTotalPrice(totalPrice);
+        }
         calculateAllPrice();
     }
 
