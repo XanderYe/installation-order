@@ -18,4 +18,8 @@ public class Part {
     private String link;
 
     private Integer type;
+
+    private Integer num;
+
+    private BigDecimal totalPrice;
 }

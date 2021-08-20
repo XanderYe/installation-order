@@ -18,12 +18,9 @@ public class Config {
 
     private String userDir = System.getProperty("user.dir");
 
-    private List<Part> partList;
-
     private Map<Integer, List<Part>> partTypeMap;
 
     private Config() {
-
     }
 
     public static Config getInstance() {

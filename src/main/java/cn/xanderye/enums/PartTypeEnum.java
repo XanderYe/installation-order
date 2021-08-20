@@ -24,7 +24,7 @@ public enum PartTypeEnum {
 
     private int value;
 
-    PartTypeEnum (String name, int value) {
+    PartTypeEnum(String name, int value) {
         this.name = name;
         this.value = value;
     }
@@ -33,6 +33,18 @@ public enum PartTypeEnum {
         for (PartTypeEnum partTypeEnum : PartTypeEnum.values()) {
             if (partTypeEnum.getName().equals(name)) {
                 return partTypeEnum.getValue();
+            }
+        }
+        return null;
+    }
+
+    public static String getNameByValue(Integer value) {
+        if (value == null) {
+            return null;
+        }
+        for (PartTypeEnum partTypeEnum : PartTypeEnum.values()) {
+            if (partTypeEnum.getValue() == value) {
+                return partTypeEnum.getName();
             }
         }
         return null;
