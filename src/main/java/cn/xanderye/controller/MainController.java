@@ -72,6 +72,7 @@ public class MainController implements Initializable {
     public void export() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("请选择保存位置");
+        directoryChooser.setInitialDirectory(new File(config.getUserDir()));
         File dir = directoryChooser.showDialog(new Stage());
         boolean exportRes = PartExcelUtil.exportExcel(partMap, allPriceLabel.getText(), dir.getAbsolutePath());
         if (exportRes) {
