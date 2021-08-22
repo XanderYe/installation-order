@@ -137,7 +137,6 @@ public class MainController implements Initializable {
         comboBox.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             boolean changeLink = false;
             if (newValue != null) {
-                BigDecimal price = BigDecimal.valueOf(0);
                 Part targetPart = null;
                 for (Part part : partList) {
                     if (newValue.equals(part.getName())) {
@@ -147,6 +146,7 @@ public class MainController implements Initializable {
                 }
                 if (targetPart != null) {
                     partMap.put(targetPart.getType(), targetPart);
+                    BigDecimal price = targetPart.getPrice();
                     int num = Integer.parseInt(numText.getText());
                     BigDecimal totalPrice = price.multiply(BigDecimal.valueOf(num));
                     priceText.setText(price.toString());
@@ -165,8 +165,8 @@ public class MainController implements Initializable {
                     }
                 }
             }
-            calculateAllPrice();
             link.setDisable(!changeLink);
+            calculateAllPrice();
         });
         priceText.textProperty().addListener((observable, oldValue, newValue) -> {
             calculateTotalPrice(partName, priceText, numText, totalPriceText);
