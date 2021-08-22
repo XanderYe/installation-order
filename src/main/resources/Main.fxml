@@ -68,6 +68,17 @@
       <NumberTextField fx:id="caseTotalPriceText" layoutX="544.0" layoutY="435.0" prefHeight="30.0" prefWidth="100.0" text="0" />
       <NumberTextField fx:id="fanTotalPriceText" layoutX="544.0" layoutY="490.0" prefHeight="30.0" prefWidth="100.0" text="0" />
 
+      <Hyperlink fx:id="cpuLink" disable="true" layoutX="674.0" layoutY="40.0" text="链接" />
+      <Hyperlink fx:id="mainBoardLink" disable="true" layoutX="674.0" layoutY="90.0" text="链接" />
+      <Hyperlink fx:id="ramLink" disable="true" layoutX="674.0" layoutY="140.0" text="链接" />
+      <Hyperlink fx:id="gpuLink" disable="true" layoutX="674.0" layoutY="190.0" text="链接" />
+      <Hyperlink fx:id="cpuFanLink" disable="true" layoutX="674.0" layoutY="240.0" text="链接" />
+      <Hyperlink fx:id="ssdLink" disable="true" layoutX="674.0" layoutY="290.0" text="链接" />
+      <Hyperlink fx:id="hddLink" disable="true" layoutX="674.0" layoutY="340.0" text="链接" />
+      <Hyperlink fx:id="powerLink" disable="true" layoutX="674.0" layoutY="390.0" text="链接" />
+      <Hyperlink fx:id="caseLink" disable="true" layoutX="674.0" layoutY="440.0" text="链接" />
+      <Hyperlink fx:id="fanLink" disable="true" layoutX="674.0" layoutY="490.0" text="链接" />
+
       <Button layoutX="544.0" layoutY="540.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="100.0" text="导出" />
    </children>
 </AnchorPane>
