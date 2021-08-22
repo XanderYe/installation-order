@@ -7,78 +7,83 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.xanderye.controller.MainController">
    <children>
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="35.0" prefHeight="30.0" prefWidth="60.0" text="CPU：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="85.0" prefHeight="30.0" prefWidth="60.0" text="主板：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="135.0" prefHeight="30.0" prefWidth="60.0" text="内存：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="185.0" prefHeight="30.0" prefWidth="60.0" text="显卡：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="235.0" prefHeight="30.0" prefWidth="60.0" text="散热器：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="285.0" prefHeight="30.0" prefWidth="60.0" text="固态：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="335.0" prefHeight="30.0" prefWidth="60.0" text="机械：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="385.0" prefHeight="30.0" prefWidth="60.0" text="电源：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="435.0" prefHeight="30.0" prefWidth="60.0" text="机箱：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="490.0" prefHeight="30.0" prefWidth="60.0" text="风扇：" />
-      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="540.0" prefHeight="30.0" prefWidth="60.0" text="总价：" />
-      <Label fx:id="allPriceLabel" layoutX="424.0" layoutY="540.0" prefHeight="30.0" prefWidth="100.0" text="0.0" textFill="RED">
+      <Label layoutX="162.0" layoutY="14.0" prefHeight="20.0" prefWidth="150.0" text="规格" />
+      <Label layoutX="344.0" layoutY="14.0" prefHeight="20.0" prefWidth="100.0" text="单价" />
+      <Label layoutX="464.0" layoutY="14.0" prefHeight="20.0" prefWidth="60.0" text="数量" />
+      <Label layoutX="544.0" layoutY="14.0" prefHeight="20.0" prefWidth="100.0" text="总价" />
+
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="45.0" prefHeight="30.0" prefWidth="60.0" text="CPU：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="95.0" prefHeight="30.0" prefWidth="60.0" text="主板：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="145.0" prefHeight="30.0" prefWidth="60.0" text="内存：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="195.0" prefHeight="30.0" prefWidth="60.0" text="显卡：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="245.0" prefHeight="30.0" prefWidth="60.0" text="散热器：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="295.0" prefHeight="30.0" prefWidth="60.0" text="固态：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="345.0" prefHeight="30.0" prefWidth="60.0" text="机械：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="395.0" prefHeight="30.0" prefWidth="60.0" text="电源：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="445.0" prefHeight="30.0" prefWidth="60.0" text="机箱：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="500.0" prefHeight="30.0" prefWidth="60.0" text="风扇：" />
+      <Label alignment="CENTER_RIGHT" layoutX="65.0" layoutY="550.0" prefHeight="30.0" prefWidth="60.0" text="总价：" />
+      <Label fx:id="allPriceLabel" layoutX="424.0" layoutY="550.0" prefHeight="30.0" prefWidth="100.0" text="0.0" textFill="RED">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
 
-      <ComboBox fx:id="cpuComboBox" editable="true" layoutX="162.0" layoutY="35.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="mainBoardComboBox" editable="true" layoutX="162.0" layoutY="85.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="ramComboBox" editable="true" layoutX="162.0" layoutY="135.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="gpuComboBox" editable="true" layoutX="162.0" layoutY="185.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="cpuFanComboBox" editable="true" layoutX="162.0" layoutY="235.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="ssdComboBox" editable="true" layoutX="162.0" layoutY="285.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="hddComboBox" editable="true" layoutX="162.0" layoutY="335.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="powerComboBox" editable="true" layoutX="162.0" layoutY="385.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="caseComboBox" editable="true" layoutX="162.0" layoutY="435.0" prefHeight="30.0" prefWidth="150.0" />
-      <ComboBox fx:id="fanComboBox" editable="true" layoutX="162.0" layoutY="490.0" prefHeight="30.0" prefWidth="150.0" />
-      <NumberTextField fx:id="cpuPriceText" layoutX="344.0" layoutY="35.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <ComboBox fx:id="cpuComboBox" editable="true" layoutX="162.0" layoutY="45.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="mainBoardComboBox" editable="true" layoutX="162.0" layoutY="95.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="ramComboBox" editable="true" layoutX="162.0" layoutY="145.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="gpuComboBox" editable="true" layoutX="162.0" layoutY="195.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="cpuFanComboBox" editable="true" layoutX="162.0" layoutY="245.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="ssdComboBox" editable="true" layoutX="162.0" layoutY="295.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="hddComboBox" editable="true" layoutX="162.0" layoutY="345.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="powerComboBox" editable="true" layoutX="162.0" layoutY="395.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="caseComboBox" editable="true" layoutX="162.0" layoutY="445.0" prefHeight="30.0" prefWidth="150.0" />
+      <ComboBox fx:id="fanComboBox" editable="true" layoutX="162.0" layoutY="500.0" prefHeight="30.0" prefWidth="150.0" />
+      <NumberTextField fx:id="cpuPriceText" layoutX="344.0" layoutY="45.0" prefHeight="30.0" prefWidth="100.0" text="0" />
 
-      <NumberTextField fx:id="mainBoardPriceText" layoutX="344.0" layoutY="85.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="ramPriceText" layoutX="344.0" layoutY="135.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="gpuPriceText" layoutX="344.0" layoutY="185.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="cpuFanPriceText" layoutX="344.0" layoutY="235.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="ssdPriceText" layoutX="344.0" layoutY="285.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="hddPriceText" layoutX="344.0" layoutY="335.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="powerPriceText" layoutX="344.0" layoutY="385.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="casePriceText" layoutX="344.0" layoutY="435.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="fanPriceText" layoutX="344.0" layoutY="490.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="mainBoardPriceText" layoutX="344.0" layoutY="95.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="ramPriceText" layoutX="344.0" layoutY="145.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="gpuPriceText" layoutX="344.0" layoutY="195.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="cpuFanPriceText" layoutX="344.0" layoutY="245.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="ssdPriceText" layoutX="344.0" layoutY="295.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="hddPriceText" layoutX="344.0" layoutY="345.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="powerPriceText" layoutX="344.0" layoutY="395.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="casePriceText" layoutX="344.0" layoutY="445.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="fanPriceText" layoutX="344.0" layoutY="500.0" prefHeight="30.0" prefWidth="100.0" text="0" />
 
-      <NumberTextField fx:id="cpuNumText" layoutX="464.0" layoutY="35.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="mainBoardNumText" layoutX="464.0" layoutY="85.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="ramNumText" layoutX="464.0" layoutY="135.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="gpuNumText" layoutX="464.0" layoutY="185.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="cpuFanNumText" layoutX="464.0" layoutY="235.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="ssdNumText" layoutX="464.0" layoutY="285.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="hddNumText" layoutX="464.0" layoutY="335.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="powerNumText" layoutX="464.0" layoutY="385.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="caseNumText" layoutX="464.0" layoutY="435.0" prefHeight="30.0" prefWidth="60.0" text="1" />
-      <NumberTextField fx:id="fanNumText" layoutX="464.0" layoutY="490.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="cpuNumText" layoutX="464.0" layoutY="45.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="mainBoardNumText" layoutX="464.0" layoutY="95.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="ramNumText" layoutX="464.0" layoutY="145.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="gpuNumText" layoutX="464.0" layoutY="195.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="cpuFanNumText" layoutX="464.0" layoutY="245.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="ssdNumText" layoutX="464.0" layoutY="295.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="hddNumText" layoutX="464.0" layoutY="345.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="powerNumText" layoutX="464.0" layoutY="395.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="caseNumText" layoutX="464.0" layoutY="445.0" prefHeight="30.0" prefWidth="60.0" text="1" />
+      <NumberTextField fx:id="fanNumText" layoutX="464.0" layoutY="500.0" prefHeight="30.0" prefWidth="60.0" text="1" />
 
-      <NumberTextField fx:id="cpuTotalPriceText" layoutX="544.0" layoutY="35.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="mainBoardTotalPriceText" layoutX="544.0" layoutY="85.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="ramTotalPriceText" layoutX="544.0" layoutY="135.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="gpuTotalPriceText" layoutX="544.0" layoutY="185.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="cpuFanTotalPriceText" layoutX="544.0" layoutY="235.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="ssdTotalPriceText" layoutX="544.0" layoutY="285.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="hddTotalPriceText" layoutX="544.0" layoutY="335.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="powerTotalPriceText" layoutX="544.0" layoutY="385.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="caseTotalPriceText" layoutX="544.0" layoutY="435.0" prefHeight="30.0" prefWidth="100.0" text="0" />
-      <NumberTextField fx:id="fanTotalPriceText" layoutX="544.0" layoutY="490.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="cpuTotalPriceText" layoutX="544.0" layoutY="45.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="mainBoardTotalPriceText" layoutX="544.0" layoutY="95.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="ramTotalPriceText" layoutX="544.0" layoutY="145.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="gpuTotalPriceText" layoutX="544.0" layoutY="195.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="cpuFanTotalPriceText" layoutX="544.0" layoutY="245.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="ssdTotalPriceText" layoutX="544.0" layoutY="295.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="hddTotalPriceText" layoutX="544.0" layoutY="345.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="powerTotalPriceText" layoutX="544.0" layoutY="395.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="caseTotalPriceText" layoutX="544.0" layoutY="445.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <NumberTextField fx:id="fanTotalPriceText" layoutX="544.0" layoutY="500.0" prefHeight="30.0" prefWidth="100.0" text="0" />
 
-      <Hyperlink fx:id="cpuLink" disable="true" layoutX="674.0" layoutY="40.0" text="链接" />
-      <Hyperlink fx:id="mainBoardLink" disable="true" layoutX="674.0" layoutY="90.0" text="链接" />
-      <Hyperlink fx:id="ramLink" disable="true" layoutX="674.0" layoutY="140.0" text="链接" />
-      <Hyperlink fx:id="gpuLink" disable="true" layoutX="674.0" layoutY="190.0" text="链接" />
-      <Hyperlink fx:id="cpuFanLink" disable="true" layoutX="674.0" layoutY="240.0" text="链接" />
-      <Hyperlink fx:id="ssdLink" disable="true" layoutX="674.0" layoutY="290.0" text="链接" />
-      <Hyperlink fx:id="hddLink" disable="true" layoutX="674.0" layoutY="340.0" text="链接" />
-      <Hyperlink fx:id="powerLink" disable="true" layoutX="674.0" layoutY="390.0" text="链接" />
-      <Hyperlink fx:id="caseLink" disable="true" layoutX="674.0" layoutY="440.0" text="链接" />
-      <Hyperlink fx:id="fanLink" disable="true" layoutX="674.0" layoutY="490.0" text="链接" />
+      <Hyperlink fx:id="cpuLink" disable="true" layoutX="674.0" layoutY="50.0" text="链接" />
+      <Hyperlink fx:id="mainBoardLink" disable="true" layoutX="674.0" layoutY="100.0" text="链接" />
+      <Hyperlink fx:id="ramLink" disable="true" layoutX="674.0" layoutY="150.0" text="链接" />
+      <Hyperlink fx:id="gpuLink" disable="true" layoutX="674.0" layoutY="200.0" text="链接" />
+      <Hyperlink fx:id="cpuFanLink" disable="true" layoutX="674.0" layoutY="250.0" text="链接" />
+      <Hyperlink fx:id="ssdLink" disable="true" layoutX="674.0" layoutY="300.0" text="链接" />
+      <Hyperlink fx:id="hddLink" disable="true" layoutX="674.0" layoutY="350.0" text="链接" />
+      <Hyperlink fx:id="powerLink" disable="true" layoutX="674.0" layoutY="400.0" text="链接" />
+      <Hyperlink fx:id="caseLink" disable="true" layoutX="674.0" layoutY="450.0" text="链接" />
+      <Hyperlink fx:id="fanLink" disable="true" layoutX="674.0" layoutY="500.0" text="链接" />
 
-      <Button layoutX="544.0" layoutY="540.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="100.0" text="导出" />
+      <Button layoutX="544.0" layoutY="550.0" mnemonicParsing="false" onAction="#export" prefHeight="30.0" prefWidth="100.0" text="导出" />
    </children>
 </AnchorPane>
